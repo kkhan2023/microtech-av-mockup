@@ -1,0 +1,1342 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>TV Repair Bolton | Microtech A/V Service, Bradshawgate</title>
+    <meta
+      name="description"
+      content="TV and audio repairs in Bolton. We fix the part that's broken, not the whole TV. 140a Bradshawgate, BL2 1BA. Call 01204 385050."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,500..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!--
+  DESIGN MOCKUP: Microtech A/V Service homepage
+  Prepared by Kasam Khan Web Consulting.
+  Grey boxes = photos Mo needs to supply. Yellow notes = details to confirm with Mo.
+-->
+    <style>
+      :root {
+        --black: #121212;
+        --sign: #1e1f21;
+        --white: #fff;
+        --bg: #f2f1ed;
+        --grey: #5a5a57;
+        --rule: #d6d4cd;
+        --blue: #1b44b5;
+        --blue-dark: #12318a;
+        --head: "Archivo", Arial, sans-serif;
+        --body: "Atkinson Hyperlegible", Verdana, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--black);
+        font-family: var(--body);
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        color: var(--blue);
+      }
+      a:hover {
+        color: var(--blue-dark);
+      }
+      p {
+        margin: 0 0 1em;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--head);
+        margin: 0;
+        line-height: 1.05;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: clamp(34px, 4vw, 50px);
+        font-stretch: 80%;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 25px;
+        font-stretch: 85%;
+        margin-bottom: 8px;
+      }
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 28px;
+      }
+      .note {
+        background: #ffe58a;
+        color: #3a2e00;
+        font-size: 15px;
+        padding: 1px 6px;
+        border-radius: 2px;
+        white-space: nowrap;
+      }
+
+      /* buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 54px;
+        padding: 0 26px;
+        font: 700 18px var(--body);
+        text-decoration: none;
+        border: 2px solid transparent;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .btn-blue {
+        background: var(--blue);
+        color: #fff;
+      }
+      .btn-blue:hover {
+        background: var(--blue-dark);
+        color: #fff;
+      }
+      .btn-line {
+        border-color: currentColor;
+        color: inherit;
+        background: none;
+      }
+      .btn-line:hover {
+        color: inherit;
+        background: rgba(127, 127, 127, 0.1);
+      }
+
+      /* photo placeholders */
+      .photo {
+        background: #c9c7c0;
+        color: #33332f;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 18px;
+        font-size: 16px;
+        line-height: 1.4;
+        border-radius: 2px;
+      }
+      .photo strong {
+        font-family: var(--head);
+        font-stretch: 85%;
+        font-size: 19px;
+        display: block;
+        margin-bottom: 2px;
+      }
+      .photo.dk {
+        background: #34363a;
+        color: #d9d9d6;
+      }
+
+      /* ---------- header: styled like the shop sign ---------- */
+      .top {
+        background: var(--sign);
+        color: #fff;
+        border-bottom: 4px solid var(--blue);
+      }
+      .top-in {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        min-height: 84px;
+      }
+      .brand {
+        color: #fff;
+        text-decoration: none;
+        line-height: 1;
+      }
+      .brand:hover {
+        color: #fff;
+      }
+      .brand b {
+        display: block;
+        font-family: var(--head);
+        font-weight: 900;
+        font-stretch: 70%;
+        font-size: 30px;
+        letter-spacing: 0.01em;
+      }
+      .brand span {
+        display: block;
+        font-size: 14px;
+        color: #cfcfcc;
+        margin-top: 4px;
+      }
+      .menu {
+        display: flex;
+        gap: 26px;
+        margin-left: auto;
+      }
+      .menu a {
+        color: #e8e8e6;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .menu a:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+      .top .tel {
+        font-family: var(--head);
+        font-stretch: 75%;
+        font-weight: 800;
+        font-size: 24px;
+        color: #fff;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .menu-btn {
+        display: none;
+        margin-left: auto;
+        background: none;
+        border: 1px solid #55575b;
+        color: #fff;
+        font: 700 17px var(--body);
+        min-height: 46px;
+        padding: 0 16px;
+        border-radius: 3px;
+      }
+      .mob-menu {
+        display: none;
+      }
+
+      /* ---------- hero ---------- */
+      .hero {
+        background: var(--sign);
+        color: #fff;
+        padding: 56px 0 0;
+      }
+      .hero-in {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 48px;
+        align-items: end;
+      }
+      .hero h1 {
+        font-size: clamp(52px, 7vw, 96px);
+        font-stretch: 68%;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.005em;
+      }
+      .hero .sub {
+        font-family: var(--head);
+        font-stretch: 80%;
+        font-weight: 600;
+        font-size: clamp(24px, 2.4vw, 32px);
+        line-height: 1.2;
+        color: #e4e4e1;
+        margin: 14px 0 24px;
+      }
+      .hero-copy {
+        padding-bottom: 56px;
+      }
+      .hero-copy p {
+        color: #d2d2cf;
+        max-width: 30em;
+      }
+      .hero .btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+      .rating {
+        margin-top: 28px;
+        color: #d2d2cf;
+        font-size: 18px;
+      }
+      .rating b {
+        color: #fff;
+      }
+      .stars {
+        color: #f2b01e;
+        letter-spacing: 2px;
+        margin-right: 6px;
+      }
+      .hero-photo {
+        aspect-ratio: 4/5;
+        margin-bottom: -56px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ---------- faults ---------- */
+      .faults {
+        padding: 120px 0 96px;
+      }
+      .faults-in {
+        display: grid;
+        grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+        gap: 56px;
+        align-items: start;
+      }
+      .fault-list {
+        list-style: none;
+        margin: 28px 0 0;
+        padding: 0;
+        border-top: 2px solid var(--black);
+      }
+      .fault-list button {
+        width: 100%;
+        text-align: left;
+        background: none;
+        border: 0;
+        border-bottom: 1px solid var(--rule);
+        padding: 16px 4px;
+        min-height: 56px;
+        font: 20px var(--body);
+        color: var(--black);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .fault-list button:hover {
+        background: #e8e6e0;
+      }
+      .fault-list button[aria-pressed="true"] {
+        font-weight: 700;
+        color: var(--blue);
+      }
+      .fault-list button[aria-pressed="true"]::after {
+        content: "→";
+      }
+      .answer {
+        background: #fff;
+        padding: 36px 38px;
+        border-top: 6px solid var(--blue);
+      }
+      .answer h3 {
+        font-size: 32px;
+        margin-bottom: 18px;
+      }
+      .answer .lbl {
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .answer .part {
+        margin-bottom: 22px;
+        color: #333;
+      }
+      .answer .foot {
+        border-top: 1px solid var(--rule);
+        padding-top: 18px;
+        font-size: 18px;
+        color: var(--grey);
+      }
+
+      /* ---------- services ---------- */
+      .services {
+        background: #fff;
+        padding: 96px 0;
+      }
+      .services .intro {
+        max-width: 36em;
+        color: var(--grey);
+      }
+      .svc {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 56px 48px;
+        margin-top: 48px;
+      }
+      .svc a.item {
+        text-decoration: none;
+        color: var(--black);
+        display: block;
+      }
+      .svc a.item:hover h3 {
+        text-decoration: underline;
+        color: var(--blue);
+      }
+      .svc .photo {
+        aspect-ratio: 16/10;
+        margin-bottom: 20px;
+      }
+      .svc p {
+        color: #3d3d3a;
+      }
+      .svc .more {
+        color: var(--blue);
+        font-weight: 700;
+      }
+
+      /* ---------- about mo ---------- */
+      .mo {
+        padding: 104px 0;
+      }
+      .mo-in {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+        gap: 64px;
+        align-items: center;
+      }
+      .mo .photo {
+        aspect-ratio: 4/5;
+      }
+      .mo .pull {
+        font-family: var(--head);
+        font-stretch: 80%;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.25;
+        border-left: 5px solid var(--blue);
+        padding-left: 20px;
+        margin: 28px 0;
+      }
+      .review {
+        background: #fff;
+        padding: 24px 26px;
+        margin-top: 28px;
+        border: 1px dashed #a9a79f;
+      }
+      .review .stars {
+        display: block;
+        margin-bottom: 6px;
+      }
+      .mo .btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      /* ---------- how it works ---------- */
+      .how {
+        background: var(--sign);
+        color: #fff;
+        padding: 96px 0;
+      }
+      .how-in {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 48px;
+        margin-top: 36px;
+      }
+      .how .col {
+        border-top: 4px solid var(--blue);
+        padding-top: 24px;
+      }
+      .how h3 {
+        font-size: 30px;
+      }
+      .how .for {
+        color: #bdbdba;
+      }
+      .how ol {
+        margin: 20px 0 28px;
+        padding-left: 24px;
+        color: #e1e1de;
+      }
+      .how li {
+        margin-bottom: 12px;
+        padding-left: 6px;
+      }
+
+      /* ---------- contact ---------- */
+      .contact {
+        padding: 104px 0 112px;
+      }
+      .contact-in {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 48px;
+        margin-top: 12px;
+      }
+      .map {
+        aspect-ratio: 4/3;
+        margin-bottom: 28px;
+      }
+      .details {
+        margin: 0;
+      }
+      .details div {
+        display: grid;
+        grid-template-columns: 100px minmax(0, 1fr);
+        gap: 12px;
+        padding: 12px 0;
+        border-top: 1px solid var(--rule);
+      }
+      .details dt {
+        font-weight: 700;
+      }
+      .details dd {
+        margin: 0;
+      }
+      form {
+        background: #fff;
+        padding: 36px;
+      }
+      form h3 {
+        font-size: 32px;
+      }
+      form .hint {
+        color: var(--grey);
+        font-size: 18px;
+      }
+      .field {
+        margin-top: 18px;
+      }
+      .field label,
+      .field .label {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+      .field input,
+      .field textarea {
+        width: 100%;
+        font: 18px var(--body);
+        padding: 12px 14px;
+        min-height: 52px;
+        border: 1.5px solid #9c9a93;
+        border-radius: 3px;
+        background: #fff;
+        color: var(--black);
+      }
+      .field input:focus,
+      .field textarea:focus {
+        outline: 3px solid #9db5f2;
+        border-color: var(--blue);
+      }
+      .pair {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .choice {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .choice button {
+        flex: 1;
+        min-height: 52px;
+        border: 1.5px solid #9c9a93;
+        background: #fff;
+        font: 700 17px var(--body);
+        color: var(--black);
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .choice button[aria-pressed="true"] {
+        background: var(--black);
+        color: #fff;
+        border-color: var(--black);
+      }
+      form .btn {
+        width: 100%;
+        margin-top: 24px;
+      }
+      .thanks {
+        margin-top: 16px;
+        padding: 14px 16px;
+        border: 1.5px solid var(--blue);
+        font-size: 18px;
+      }
+
+      /* ---------- footer ---------- */
+      footer {
+        background: var(--black);
+        color: #bdbdba;
+        padding: 56px 0 40px;
+        font-size: 17px;
+      }
+      .foot-in {
+        display: grid;
+        grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
+        gap: 36px;
+      }
+      footer h4 {
+        color: #fff;
+        margin: 0 0 12px;
+        font-size: 17px;
+      }
+      footer a {
+        color: #e1e1de;
+        text-decoration: none;
+        display: block;
+        padding: 4px 0;
+      }
+      footer a:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+      .legal {
+        border-top: 1px solid #333;
+        margin-top: 40px;
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: space-between;
+      }
+
+      /* ---------- mobile bar ---------- */
+      .bar {
+        display: none;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      @media (max-width: 1000px) {
+        .menu,
+        .top .tel {
+          display: none;
+        }
+        .menu-btn {
+          display: inline-flex;
+          align-items: center;
+        }
+        .mob-menu {
+          display: flex;
+          flex-direction: column;
+          padding: 0 0 16px;
+        }
+        .mob-menu a {
+          color: #fff;
+          text-decoration: none;
+          padding: 14px 0;
+          border-top: 1px solid #3a3c40;
+          font-size: 19px;
+        }
+        .hero-in,
+        .faults-in,
+        .mo-in,
+        .contact-in {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .hero-photo {
+          margin-bottom: 0;
+          aspect-ratio: 16/10;
+        }
+        .hero-copy {
+          padding-bottom: 0;
+        }
+        .hero {
+          padding-bottom: 40px;
+        }
+        .mo-in {
+          gap: 40px;
+        }
+        .mo .photo {
+          aspect-ratio: 16/12;
+        }
+      }
+      @media (max-width: 680px) {
+        body {
+          font-size: 19px;
+        }
+        .wrap {
+          padding: 0 18px;
+        }
+        .top-in {
+          min-height: 72px;
+        }
+        .brand b {
+          font-size: 25px;
+        }
+        .hero {
+          padding-top: 36px;
+        }
+        .hero .btn,
+        .mo .btn {
+          width: 100%;
+        }
+        .faults,
+        .services,
+        .mo,
+        .how,
+        .contact {
+          padding: 64px 0;
+        }
+        .answer {
+          padding: 26px 22px;
+        }
+        .svc,
+        .how-in {
+          grid-template-columns: minmax(0, 1fr);
+          gap: 40px;
+        }
+        .pair {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        form {
+          padding: 24px 20px;
+        }
+        .foot-in {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        }
+        .foot-in > div:first-child {
+          grid-column: 1/-1;
+        }
+        footer {
+          padding-bottom: 110px;
+        }
+        .bar {
+          display: grid;
+          grid-template-columns: 1.4fr 1fr 1fr;
+          gap: 8px;
+          position: fixed;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 50;
+          padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+          background: var(--sign);
+          border-top: 3px solid var(--blue);
+        }
+        .bar a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 3px;
+          min-height: 58px;
+          border-radius: 3px;
+          text-decoration: none;
+          color: #fff;
+          font-weight: 700;
+          font-size: 15px;
+          background: #2e3034;
+        }
+        .bar a.call {
+          background: var(--blue);
+        }
+        .bar svg {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== Header ===== -->
+    <header class="top">
+      <div class="wrap">
+        <div class="top-in">
+          <a class="brand" href="#">
+            <b>MICROTECH A/V SERVICES</b>
+            <span>Audio Visual Services, Bolton</span>
+          </a>
+          <nav class="menu" aria-label="Main">
+            <a href="/services/tv-repair-bolton/">TV repair</a>
+            <a href="/services/tv-board-repair/">Board repairs</a>
+            <a href="/services/bga-smd-rework/">Trade</a>
+            <a href="/services/audio-repair-bolton/">Audio</a>
+            <a href="/about/">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a class="tel" href="tel:+441204385050">01204 38 50 50</a>
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobMenu"
+          >
+            Menu
+          </button>
+        </div>
+        <nav class="mob-menu" id="mobMenu" aria-label="Mobile" hidden>
+          <a href="/services/tv-repair-bolton/">TV repair in Bolton</a>
+          <a href="/services/tv-board-repair/">Board repairs by post</a>
+          <a href="/services/bga-smd-rework/">Trade BGA &amp; SMD work</a>
+          <a href="/services/audio-repair-bolton/">Audio repair</a>
+          <a href="/about/">About Mo</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== Hero ===== -->
+      <section class="hero" aria-labelledby="h1">
+        <div class="wrap">
+          <div class="hero-in">
+            <div class="hero-copy">
+              <h1 id="h1">TV repairs in Bolton</h1>
+              <p class="sub">
+                We fix the part that's broken, so you don't have to buy a new
+                telly.
+              </p>
+              <p>
+                Most TVs that stop working have one faulty part on one board. Mo
+                finds it and replaces it at the shop on Bradshawgate. If your TV
+                isn't worth repairing, he'll tell you before you spend a penny.
+              </p>
+              <div class="btns">
+                <a class="btn btn-blue" href="tel:+441204385050"
+                  >Call 01204 385050</a
+                >
+                <a class="btn btn-line" href="#contact">Send a message</a>
+              </div>
+              <p class="rating">
+                <span class="stars" aria-hidden="true">★★★★★</span
+                ><b>4.7 on Google</b> from 78 customers
+              </p>
+            </div>
+            <div
+              class="photo dk hero-photo"
+              role="img"
+              aria-label="Photo to come: Mo repairing a TV board at his bench"
+            >
+              <strong>Photo: Mo at his bench</strong>
+              Working on a TV board under the magnifier lamp. Real, natural
+              light, not posed.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Faults ===== -->
+      <section class="faults" aria-labelledby="faults-h">
+        <div class="wrap">
+          <div class="faults-in">
+            <div>
+              <h2 id="faults-h">What's wrong with your TV?</h2>
+              <p>
+                Pick the one that sounds like yours and we'll explain what's
+                usually behind it. No jargon.
+              </p>
+              <ul class="fault-list" id="faultList">
+                <li>
+                  <button
+                    type="button"
+                    data-fault="standby"
+                    aria-pressed="true"
+                  >
+                    Red light keeps flashing
+                  </button>
+                </li>
+                <li>
+                  <button type="button" data-fault="dead" aria-pressed="false">
+                    Won't switch on at all
+                  </button>
+                </li>
+                <li>
+                  <button type="button" data-fault="nopic" aria-pressed="false">
+                    Sound but no picture
+                  </button>
+                </li>
+                <li>
+                  <button type="button" data-fault="logo" aria-pressed="false">
+                    Stuck on the logo
+                  </button>
+                </li>
+                <li>
+                  <button type="button" data-fault="lines" aria-pressed="false">
+                    Lines across the screen
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    data-fault="nosound"
+                    aria-pressed="false"
+                  >
+                    Picture but no sound
+                  </button>
+                </li>
+                <li>
+                  <button type="button" data-fault="other" aria-pressed="false">
+                    Something else
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="answer" aria-live="polite">
+              <h3 id="aTitle"></h3>
+              <p class="lbl">What's usually going on</p>
+              <p class="part" id="aCause"></p>
+              <p class="lbl">What Mo does about it</p>
+              <p class="part" id="aFix"></p>
+              <p class="foot">
+                Every TV's different, so Mo will always check yours before
+                giving you a price. <a href="#contact">Ask about your TV</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Services ===== -->
+      <section class="services" aria-labelledby="svc-h">
+        <div class="wrap">
+          <h2 id="svc-h">TV and audio repairs we do</h2>
+          <p class="intro">
+            Bring your TV into the shop, or if you're further afield, post us
+            the board.
+          </p>
+          <div class="svc">
+            <a class="item" href="/services/tv-repair-bolton/">
+              <div
+                class="photo"
+                role="img"
+                aria-label="Photo to come: a customer's TV on the bench"
+              >
+                <strong>Photo: a TV on the bench</strong>Back off, ready for
+                repair.
+              </div>
+              <h3>TV repair in Bolton</h3>
+              <p>
+                LED, QLED, OLED, LCD and plasma TVs from Sony, LG, Samsung,
+                Panasonic and most other makes. Bring it in and Mo will tell you
+                what's wrong and what it'll cost.
+              </p>
+              <span class="more">TV repairs</span>
+            </a>
+            <a class="item" href="/services/tv-board-repair/">
+              <div
+                class="photo"
+                role="img"
+                aria-label="Photo to come: repaired TV boards ready to post back"
+              >
+                <strong>Photo: repaired boards</strong>Labelled and packed to go
+                back to customers.
+              </div>
+              <h3>TV board repairs by post</h3>
+              <p>
+                Main boards and power supplies from anywhere in the UK,
+                including Sony boot-loop faults and LG OLED power supplies. Post
+                it to us and we'll send it back repaired.
+              </p>
+              <span class="more">Board repairs</span>
+            </a>
+            <a class="item" href="/services/bga-smd-rework/">
+              <div
+                class="photo dk"
+                role="img"
+                aria-label="Photo to come: BGA rework station"
+              >
+                <strong>Photo: the rework station</strong>Mid-job, with a chip
+                lifted.
+              </div>
+              <h3>BGA and SMD rework for the trade</h3>
+              <p>
+                For engineers and repair shops who need chip-level work done. Mo
+                already does this for engineers across the UK and Europe.
+              </p>
+              <span class="more">Trade work</span>
+            </a>
+            <a class="item" href="/services/audio-repair-bolton/">
+              <div
+                class="photo"
+                role="img"
+                aria-label="Photo to come: an amplifier being repaired"
+              >
+                <strong>Photo: an amp opened up</strong>Amplifier or subwoofer
+                on the bench.
+              </div>
+              <h3>Audio and hi-fi repair</h3>
+              <p>
+                Amps, AV receivers, subwoofers, soundbars and party speakers. No
+                sound, stuck in protect mode, or won't turn on.
+              </p>
+              <span class="more">Audio repairs</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== About Mo ===== -->
+      <section class="mo" aria-labelledby="mo-h">
+        <div class="wrap">
+          <div class="mo-in">
+            <div
+              class="photo"
+              role="img"
+              aria-label="Photo to come: portrait of Mo in the shop"
+            >
+              <strong>Photo: Mo in the shop</strong>Behind the counter, looking
+              at the camera, boards on the shelves behind him.
+            </div>
+            <div>
+              <h2 id="mo-h">Your TV repair is done by Mo, start to finish</h2>
+              <p>
+                There's no call centre and no sending it away. Mo has been
+                fixing TVs at the shop on Bradshawgate for years, and he's sold
+                over 11,000 repairs and parts on eBay since 2007 with 100%
+                positive feedback. Other engineers send him the boards they
+                can't fix.
+              </p>
+              <p class="pull">
+                "If it's not worth fixing, I'll tell you. I'd rather you came
+                back than paid me for nothing."
+                <span class="note">Check with Mo</span>
+              </p>
+              <div class="review">
+                <span class="stars" aria-label="5 stars">★★★★★</span>
+                <span class="note">Paste a real Google review here</span>
+                <p style="margin-top: 10px; color: var(--grey)">
+                  Pick one that mentions the TV, what was wrong, and how it
+                  turned out. First name and month only.
+                </p>
+              </div>
+              <div class="btns">
+                <a class="btn btn-line" href="/about/">More about Mo</a>
+                <a
+                  class="btn btn-line"
+                  href="https://www.google.com/maps/place/Microtech+A%2FV+Service/"
+                  >Read the Google reviews</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== How it works ===== -->
+      <section class="how" aria-labelledby="how-h">
+        <div class="wrap">
+          <h2 id="how-h">Getting your TV repaired</h2>
+          <div class="how-in">
+            <div class="col">
+              <h3>Local? Bring it in</h3>
+              <p class="for">TVs, amps and speakers.</p>
+              <ol>
+                <li>Give Mo a ring with the make and model.</li>
+                <li>
+                  Drop it at 140a Bradshawgate and he'll check it over.
+                  <span class="note">Free check?</span>
+                </li>
+                <li>
+                  He tells you what's wrong and the price. Nothing gets done
+                  until you say so.
+                </li>
+              </ol>
+              <a class="btn btn-blue" href="tel:+441204385050"
+                >Call 01204 385050</a
+              >
+            </div>
+            <div class="col">
+              <h3>Further away? Post the board</h3>
+              <p class="for">For engineers, repair shops and DIYers.</p>
+              <ol>
+                <li>
+                  Get in touch with your board number so Mo can confirm he can
+                  fix it.
+                </li>
+                <li>
+                  Pack it well and post it with your name and number inside.
+                </li>
+                <li>
+                  He repairs it, tests it and posts it back.
+                  <span class="note">Turnaround?</span>
+                </li>
+              </ol>
+              <a class="btn btn-line" href="/services/tv-board-repair/"
+                >How board repairs work</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Contact ===== -->
+      <section class="contact" id="contact" aria-labelledby="contact-h">
+        <div class="wrap">
+          <h2 id="contact-h">Find us on Bradshawgate, Bolton</h2>
+          <div class="contact-in">
+            <div>
+              <div
+                class="photo dk map"
+                role="img"
+                aria-label="Map to come: Google Maps embed"
+              >
+                <strong>Google Map</strong>Embed the Microtech A/V Service
+                listing here.
+              </div>
+              <dl class="details">
+                <div>
+                  <dt>Address</dt>
+                  <dd>
+                    Microtech A/V Service<br />140a Bradshawgate<br />Bolton BL2
+                    1BA
+                  </dd>
+                </div>
+                <div>
+                  <dt>Phone</dt>
+                  <dd>
+                    <a href="tel:+441204385050"><b>01204 385050</b></a>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:microtechservice@hotmail.com"
+                      >microtechservice@hotmail.com</a
+                    >
+                  </dd>
+                </div>
+                <div>
+                  <dt>Open</dt>
+                  <dd><span class="note">Opening hours from Mo</span></dd>
+                </div>
+                <div>
+                  <dt>Parking</dt>
+                  <dd>
+                    A few minutes' walk from the town centre. The street outside
+                    can get busy, so allow a bit of time.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <form id="enquiry" novalidate>
+              <h3>Send Mo a message</h3>
+              <p class="hint">
+                Tell him what the TV's doing and he'll get back to you.
+                <span class="note">How quickly?</span>
+              </p>
+              <div class="pair">
+                <div class="field">
+                  <label for="name">Your name</label
+                  ><input id="name" type="text" autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone number</label
+                  ><input id="phone" type="tel" autocomplete="tel" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="model">Make and model</label
+                ><input
+                  id="model"
+                  type="text"
+                  placeholder="It's on a sticker on the back"
+                />
+              </div>
+              <div class="field">
+                <label for="fault">What's it doing?</label
+                ><textarea id="fault" rows="3"></textarea>
+              </div>
+              <div class="field">
+                <span class="label" id="routeLabel"
+                  >Will you bring it in or post it?</span
+                >
+                <div class="choice" role="group" aria-labelledby="routeLabel">
+                  <button type="button" aria-pressed="true">Bring it in</button>
+                  <button type="button" aria-pressed="false">Post it</button>
+                </div>
+              </div>
+              <button class="btn btn-blue" type="submit">Send message</button>
+              <p class="thanks" id="thanks" role="status" hidden>
+                Thanks, Mo will be in touch. If it's urgent, ring 01204 385050.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <div class="wrap">
+        <div class="foot-in">
+          <div>
+            <a class="brand" href="#"
+              ><b>MICROTECH A/V SERVICES</b
+              ><span>Audio Visual Services, Bolton</span></a
+            >
+            <p style="margin-top: 16px">
+              TV and audio repairs at the shop on Bradshawgate, and board
+              repairs by post across the UK.
+            </p>
+          </div>
+          <div>
+            <h4>Repairs</h4>
+            <a href="/services/tv-repair-bolton/">TV repair</a>
+            <a href="/services/tv-board-repair/">Board repairs by post</a>
+            <a href="/services/bga-smd-rework/">Trade work</a>
+            <a href="/services/audio-repair-bolton/">Audio repair</a>
+          </div>
+          <div>
+            <h4>More</h4>
+            <a href="/about/">About Mo</a>
+            <a href="https://www.ebay.co.uk/str/microtechavservices"
+              >Parts on eBay</a
+            >
+            <a href="https://www.facebook.com/MicrotechAvservices/">Facebook</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <a href="tel:+441204385050">01204 385050</a>
+            <a href="mailto:microtechservice@hotmail.com">Email</a>
+            <span style="display: block; padding: 4px 0"
+              >140a Bradshawgate<br />Bolton BL2 1BA</span
+            >
+          </div>
+        </div>
+        <div class="legal">
+          <span>© Microtech A/V Service</span
+          ><a href="/privacy-policy/" style="display: inline">Privacy policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== Mobile bar ===== -->
+    <nav class="bar" aria-label="Quick contact">
+      <a class="call" href="tel:+441204385050"
+        ><svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path
+            d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"
+          /></svg
+        >Call Mo</a
+      >
+      <a href="mailto:microtechservice@hotmail.com"
+        ><svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+          <path d="m22 6-10 7L2 6" /></svg
+        >Email</a
+      >
+      <a href="https://www.ebay.co.uk/str/microtechavservices"
+        ><svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+          <path d="M3 6h18" />
+          <path d="M16 10a4 4 0 0 1-8 0" /></svg
+        >Shop</a
+      >
+    </nav>
+
+    <script>
+      const faults = {
+        standby: [
+          "Your TV comes on for a second, then gives up.",
+          "A flashing red light is the TV telling you it's found a fault. It's usually the power supply or the main board, and usually just one part on it.",
+          "Mo reads what the light is telling him, tests the board and replaces the part that's failed. Not the whole board.",
+        ],
+        dead: [
+          "Your TV is completely dead. No lights, nothing.",
+          "This is usually the power supply board. A blown fuse or one failed part can stop the whole TV.",
+          "Mo tests the power supply, finds the part that's gone and replaces it.",
+        ],
+        nopic: [
+          "You can hear it, but the screen stays black.",
+          "Most of the time this is the backlight. On LED TVs, one dead LED in a strip can switch the whole lot off.",
+          "Mo checks the backlight and, if that's the problem, fits a new set of LED strips.",
+        ],
+        logo: [
+          "It shows the logo, then doesn't get any further.",
+          "Usually a problem with the software or memory chip on the main board. Some Sony TVs are well known for it.",
+          "Mo reprograms or replaces the memory chip so the TV can start up properly again.",
+        ],
+        lines: [
+          "Lines, flickering or patches across the picture.",
+          "It could be the main board, the cable to the screen, or the screen itself. The screen is the expensive bit.",
+          "Mo works out which it is first. If it's the screen, he'll tell you honestly whether it's worth repairing.",
+        ],
+        nosound: [
+          "The picture's fine but there's no sound.",
+          "Often the sound chip on the main board has failed.",
+          "Mo tests the sound circuit and replaces the faulty part.",
+        ],
+        other: [
+          "Not sure what it's doing?",
+          "That's fine. Tell us what you can see and hear, and check the make and model on the sticker on the back.",
+          "Give Mo a ring or send a message. He'll tell you if it sounds fixable before you bring it in.",
+        ],
+      }
+      const buttons = document.querySelectorAll("#faultList button")
+      function showFault(key) {
+        const f = faults[key]
+        document.getElementById("aTitle").textContent = f[0]
+        document.getElementById("aCause").textContent = f[1]
+        document.getElementById("aFix").textContent = f[2]
+        buttons.forEach((b) =>
+          b.setAttribute("aria-pressed", b.dataset.fault === key),
+        )
+      }
+      buttons.forEach((b) =>
+        b.addEventListener("click", () => showFault(b.dataset.fault)),
+      )
+      showFault("standby")
+
+      const menuBtn = document.getElementById("menuBtn")
+      const mobMenu = document.getElementById("mobMenu")
+      menuBtn.addEventListener("click", () => {
+        const open = mobMenu.hidden
+        mobMenu.hidden = !open
+        menuBtn.setAttribute("aria-expanded", open)
+        menuBtn.textContent = open ? "Close" : "Menu"
+      })
+      mobMenu.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          mobMenu.hidden = true
+          menuBtn.setAttribute("aria-expanded", false)
+          menuBtn.textContent = "Menu"
+        }),
+      )
+
+      document.querySelectorAll(".choice button").forEach((b) =>
+        b.addEventListener("click", () => {
+          b.parentNode
+            .querySelectorAll("button")
+            .forEach((x) => x.setAttribute("aria-pressed", x === b))
+        }),
+      )
+
+      document.getElementById("enquiry").addEventListener("submit", (e) => {
+        e.preventDefault()
+        document.getElementById("thanks").hidden = false
+      })
+    </script>
+  </body>
+</html>
